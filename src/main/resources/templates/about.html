@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/common :: head('About Me')}"></head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header th:replace="~{fragments/common :: navbar}"></header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section-padding">
+            <div class="container">
+                
+                <!-- Page Title -->
+                <div class="section-title-center fade-in-on-scroll">
+                    <h2>About Me</h2>
+                    <p class="text-muted">A glimpse into my academic journey, leadership roles, and technical expertise.</p>
+                </div>
+
+                <!-- Intro & Education -->
+                <div class="row align-items-center mb-5 pb-3">
+                    <div class="col-lg-6 mb-4 mb-lg-0 fade-in-on-scroll">
+                        <h3 class="font-heading mb-3 text-dark">Academic Journey & Interests</h3>
+                        <p class="text-secondary">
+                            I am currently a B.Tech Computer Science Engineering student at <strong>MIT Vishwaprayag University</strong>. My academic foundation has fueled a deep interest in software engineering, intelligence systems, and data analytics.
+                        </p>
+                        <p class="text-secondary">
+                            I believe in the power of code to bring innovative solutions to life. Whether it is optimizing algorithms for robots, building robust web applications using Spring Boot, or processing large datasets to discover actionable intelligence, I approach each challenge with curiosity and dedication.
+                        </p>
+                        <div class="mt-4">
+                            <h5 class="text-dark fw-bold mb-3">Core Areas of Interest:</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-white text-dark border p-2 px-3 rounded-pill"><i class="bi bi-cpu text-success me-2"></i>Artificial Intelligence</span>
+                                <span class="badge bg-white text-dark border p-2 px-3 rounded-pill"><i class="bi bi-bar-chart text-success me-2"></i>Data Analytics</span>
+                                <span class="badge bg-white text-dark border p-2 px-3 rounded-pill"><i class="bi bi-code-slash text-success me-2"></i>Software Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 fade-in-on-scroll">
+                        <div class="custom-card border-0 bg-white shadow-sm p-4">
+                            <h4 class="mb-4 text-dark"><i class="bi bi-mortarboard-fill text-success me-2"></i>Education</h4>
+                            <div class="d-flex align-items-start border-start border-2 border-success ps-3 py-2">
+                                <div>
+                                    <h5 class="mb-1 text-dark">B.Tech in Computer Science Engineering</h5>
+                                    <p class="text-success mb-1 fw-semibold">MIT Vishwaprayag University</p>
+                                    <p class="text-muted mb-0 small"><i class="bi bi-calendar3 me-2"></i>Present</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline / Leadership (Veilaana) -->
+                <div class="row mb-5 fade-in-on-scroll">
+                    <div class="col-12">
+                        <h3 class="font-heading text-center mb-5 text-dark">Leadership & Entrepreneurship</h3>
+                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <div class="timeline">
+                            <!-- Veilaana -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">Founder & Manager</div>
+                                <h4 class="text-dark">Veilaana</h4>
+                                <p class="text-muted">Modest Fashion Brand</p>
+                                <p class="text-secondary">
+                                    Established and currently manage Veilaana, a modest fashion brand. Responsibilities include shaping the brand identity, establishing a robust digital presence, coordinating digital marketing, and leading customer engagement strategies.
+                                </p>
+                                <a href="https://veilaana.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sage-outline btn-sm d-inline-flex align-items-center gap-2 mt-2">
+                                    <i class="bi bi-link-45deg"></i>
+                                    <span>Visit Veilaana Website</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div id="skills-section" class="row section-padding pt-4 fade-in-on-scroll">
+                    <div class="col-12">
+                        <h3 class="font-heading text-center mb-5 text-dark">Technical Skillset</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="skills-container">
+                            <div class="row g-4">
+                                <!-- Programming -->
+                                <div class="col-md-4">
+                                    <div class="skill-category">
+                                        <h4 class="skill-category-title"><i class="bi bi-terminal me-2"></i>Programming</h4>
+                                        <div class="d-flex flex-wrap">
+                                            <span class="skill-badge">Java</span>
+                                            <span class="skill-badge">Python</span>
+                                            <span class="skill-badge">MySQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Web -->
+                                <div class="col-md-4">
+                                    <div class="skill-category">
+                                        <h4 class="skill-category-title"><i class="bi bi-globe2 me-2"></i>Web Development</h4>
+                                        <div class="d-flex flex-wrap">
+                                            <span class="skill-badge">HTML</span>
+                                            <span class="skill-badge">CSS</span>
+                                            <span class="skill-badge">JavaScript</span>
+                                            <span class="skill-badge">Spring Boot</span>
+                                            <span class="skill-badge">Thymeleaf</span>
+                                            <span class="skill-badge">Bootstrap 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tools -->
+                                <div class="col-md-4">
+                                    <div class="skill-category">
+                                        <h4 class="skill-category-title"><i class="bi bi-wrench me-2"></i>Tools & IDEs</h4>
+                                        <div class="d-flex flex-wrap">
+                                            <span class="skill-badge">Git</span>
+                                            <span class="skill-badge">VS Code</span>
+                                            <span class="skill-badge">IntelliJ IDEA</span>
+                                            <span class="skill-badge">Jupyter Notebook</span>
+                                            <span class="skill-badge">Google Colab</span>
+                                            <span class="skill-badge">Eclipse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{fragments/common :: footer}"></footer>
+
+    <!-- Scripts -->
+    <div th:replace="~{fragments/common :: scripts}"></div>
+
+</body>
+</html>

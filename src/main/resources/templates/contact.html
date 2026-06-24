@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/common :: head('Contact Me')}"></head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header th:replace="~{fragments/common :: navbar}"></header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section-padding">
+            <div class="container">
+                
+                <!-- Page Title -->
+                <div class="section-title-center fade-in-on-scroll">
+                    <h2>Get In Touch</h2>
+                    <p class="text-muted">Have an opportunity, a project idea, or just want to connect? Drop a message!</p>
+                </div>
+
+                <div class="row g-5">
+                    
+                    <!-- Contact Information Column -->
+                    <div class="col-lg-5 fade-in-on-scroll">
+                        <h3 class="font-heading mb-4 text-dark">Contact Information</h3>
+                        <p class="text-secondary mb-5">
+                            I am open to internships, software engineering roles, and collaborative projects in AI, Data Analytics, and Full Stack development. Feel free to reach out through any of the channels below.
+                        </p>
+
+                        <!-- Contact Details List -->
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="bi bi-envelope-at-fill"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email Me</div>
+                                <div class="contact-value">
+                                    <a href="mailto:rakshandakaranje05@gmail.com" class="text-dark">rakshandakaranje05@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon-box">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Solapur, Maharashtra, India</div>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn & GitHub Buttons -->
+                        <div class="mt-5">
+                            <h5 class="text-dark fw-bold mb-3">Professional Profiles</h5>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://www.linkedin.com/in/rakshanda-karanje-497276229/" target="_blank" rel="noopener noreferrer" class="btn btn-sage d-inline-flex align-items-center gap-2">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span>Connect on LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/rakshandakaranje" target="_blank" rel="noopener noreferrer" class="btn btn-sage-outline d-inline-flex align-items-center gap-2">
+                                    <i class="bi bi-github"></i>
+                                    <span>Explore GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="col-lg-7 fade-in-on-scroll">
+                        <div class="custom-card bg-white p-4 p-md-5">
+                            <h3 class="h4 text-dark mb-4"><i class="bi bi-send-fill text-success me-2"></i>Send a Message</h3>
+                            
+                            <form id="contactForm" class="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">Your Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">Your Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="johndoe@example.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="message">Message</label>
+                                            <textarea class="form-control" id="message" rows="5" placeholder="Hi Rakshanda, I would love to discuss..." required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-sage px-4 d-inline-flex align-items-center gap-2">
+                                            <span>Send Message</span>
+                                            <i class="bi bi-send"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer th:replace="~{fragments/common :: footer}"></footer>
+
+    <!-- Scripts -->
+    <div th:replace="~{fragments/common :: scripts}"></div>
+
+</body>
+</html>
